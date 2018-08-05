@@ -1,0 +1,111 @@
+/* COMMON STYLES */
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+h1 {
+  font-family: 'SEGA LOGO FONT';
+  font-weight: 200;
+  color: #8ccac4;
+}
+
+/* FAVORITEROBOTS STYLES */
+.addToFavorites,
+.favoritesBtn {
+  background-image: linear-gradient(
+    to left,
+    rgba(7, 28, 81, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  padding: 1em;
+  color: #8ccac4;
+  font-family: 'SEGA LOGO FONT';
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 3px rgba(7, 28, 81, 0.5);
+}
+
+.favoritesBtn span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 0.3em;
+}
+
+.favoriteRobots {
+  padding: 1em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .favoriteRobot {
+    width: 50vw;
+  }
+
+  .favoriteRobot img {
+    width: 50vw;
+  }
+}
+/* HEADER STYLES*/
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* MODAL STYLES*/
+
+.modalWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalCard {
+  position: relative;
+  background: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow-y: none;
+  max-width: 80vw;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  z-index: 10;
+}
+
+.fa-times {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 1.5rem;
+}
+
+.modalBackground {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.5;
+}
+
+.favoriteRobotsModal {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
